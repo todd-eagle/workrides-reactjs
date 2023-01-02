@@ -1,0 +1,374 @@
+[
+   {
+    "id": 0,
+    "page_id": "landing",
+    "content": 
+        [
+            {
+                "id": 0,
+                "section": "hero",
+                "heading": "Helping people get to work. We provide safe, accessible transportation to those in need."
+            },
+            {
+                "id": 1,          
+                "section": "general",
+                "heading": "Reliable, low cost transportation to work is ",
+                "heading_span": "important",
+                "lead_text": "Reliable transportation to work helps low-income workers escape the cycle of poverty.",
+                "general_info":
+                [
+                    {
+                        "percentage": "41%",
+                        "info": "of residents from small towns and rural communities have no public transportation options; 65% have few transit options and 25% have limit access to public transit."
+                    },
+                    {
+                        "percentage": "4X.",
+                        "info": "Workers who have reliable, consistent transportation are 4 times more likely to keep their jobs."
+                    },
+                    {
+                        "percentage": "30%",
+                        "info": "or more of low-income workers’ total income is dedicated to transportation costs."
+                    }
+                ]
+            },
+            {
+                "id": 2,          
+                "section": "safety",
+                "heading": "Making transportation safe and ",
+                "heading_span": "accessible",
+                "lead_text": "Work doesn’t care about weather conditions.",
+                "safety_cards":
+                [
+                    {
+                        "header":"Workers",
+                        "content": "who cannot afford a car frequently walk or bike to work, regardless of the weather.  This, in turn, carries a substantial risk for personal injury."
+                    },
+                    {
+                        "header":"Weather",
+                        "content": "can severely impact a walking or biking worker's ability to arrive to work on time. This can have a devastating impact on livelihood."
+                    },
+                    {
+                        "header":"Workers",
+                        "content": "who walk or bike typically do so on roads that are heavily trafficked by automobiles. These dangers are exacerbated when working at night."
+                    }
+                ]
+            } ,
+            {
+                "id": 3,
+                "section": "testimonials",
+                "heading": "Those we're ",
+                "heading_span": "helping",
+                "lead_text": "How we’re impacting lives.",
+                "testimonials":
+                [
+                    {
+                        "testimonial": "The transportation service is very helpful! My son is disabled and I’m a single parent",
+                        "tesimonial_hidden": ", so this service is very helpful getting my son to work.",
+                        "name": "Mary Young"
+                    },
+                    {
+                        "testimonial": "Due to the fact that I don’t have my own transportation, I used to have to find",
+                        "tesimonial_hidden": " rides to and from work, which cuts my hours. The service is always available, on time, and professional.",
+                        "name": "Nicole Williams"
+                    },
+                    {
+                        "testimonial": "The service is good for people with out transportation to work. It’s reliable and",
+                        "tesimonial_hidden": " always on time. There is nothing that I dislike about this service!",
+                        "name": "Kaleigh Wilson"
+                    },
+                    {
+                        "testimonial": "I get to work on time. I save money. The service is doing something that no one",
+                        "tesimonial_hidden": " has done. Helping poor people get to work.",
+                        "name": "Thomasina Longshare"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "section": "join",
+                "heading": "The most important person in this endeavor: ",
+                "heading_span": "You",
+                "lead_text": "There are multiple ways you can support Work Rides. Choose the one that represents you.",
+                "join_options":
+                [
+                    {
+                        "join_heading": "Social media",
+                        "join_info":[
+                            {
+                                "social_platform": "@facebook",
+                                "social_platform_full": "@facebook/workrides.org",
+                                "link": "https://facebook.com/workrides.org",
+                                "svg": "#icon-facebook"
+        
+                            }, 
+                            {
+                                "social_platform": "@twitter",
+                                "social_platform_full": "@twitter/workrides",
+                                "link": "https://twitter.com/workrides",
+                                "svg": "#icon-twitter"
+        
+                            }, 
+                            {
+                                "social_platform": "@instagram",
+                                "social_platform_full": "@instagram/workridesdotorg",
+                                "link": "https://instagram.com/workridesdotorg",
+                                "svg": "#icon-instagram"
+                            }
+                        ]
+                    },
+                    {
+                        "join_heading": "Start a fundraising campaign",
+                        "join_info": "Planning an event? Make it special by turning it into a fundraising campaign for Work Rides!"
+                    },
+                    {
+                        "join_heading": "Join our community",
+                        "join_info": "Whether it's for discussions, questions, news or support, be a part of something special."
+                    },
+                    {
+                        "join_heading": "Give the gift of membership",
+                        "join_info": "Do you want to give the perfect gift? A gift of membership is the perfect way to celebrate a special occasion while helping to improve people's lives."
+                    }
+                ]
+            }                          
+        ]
+    },
+    {
+        "id": 1,
+        "page_id": "services",
+        "content": 
+        [
+            {
+                "id": 0,
+                "section": "hero",
+                "heading": "Serving communities. Serving people."
+            },
+            {
+                "id": 1,          
+                "section": "service",
+                "mini_sections":[
+                    {
+                        "id": 0,
+                        "heading": "Consistent. Reliable. ",
+                        "heading_span": "Affordable",
+                        "lead_text": "Work rides provides consistent, reliable and timely transportation services to those who need it."
+                    },
+                    {
+                        "id": 1,
+                        "heading": "Only the ",
+                        "heading_span": "Beginning",
+                        "lead_text": "Work Rides is striving to address issues affecting disadvantaged communities."
+                    }
+                ]
+            },
+            {
+                "id": 2,          
+                "section": "transit",
+                "heading": "The #1 determinant for upward mobility:",
+                "heading_span": "Reliable Transportation",
+                "lead_text": "Access to reliable transportation leads to economic empowerment.",
+                "content_text": "Studies have consistently shown that reliable transportation to and from work is the single greatest contributor to escaping the cycle of poverty.",
+                "quoted_text":  "Access to just about everything associated with upward mobility and economic progress —jobs, quality food, and goods (at reasonable prices), healthcare, and schooling — relies on the ability to get around in an efficient way, and for an affordable price.",
+                "qouted_source": "- The Atlantic",
+                "small_heading": "We're here to help",
+                "botton_text": "Work Rides is currently working with businesses and communities to lessen the economic burdens that riders face when performing daily tasks that require transportation."
+
+            },
+            {
+                "id": 3,          
+                "section": "food",
+                "heading": " Helping to reduce ",
+                "heading_span": "food insecurity",
+                "lead_text": "We provide our riders access to healthier food options.",
+                "content_text": "Food insecurity is caused by many issues. One issue is a phenomenon known as a food desert. Food deserts are areas devoid of fresh food, such as fresh fruits, vegetables and non-processed meats. The type of foods in such areas constitute highly processed foods which have extended shelf lives and are cheaper to retain at local convenient stores. Work Rides seeks to mitigate the effects of food deserts by providing dedicated transportation options to supermarkets, farmers markets and food share networks."
+            }
+        ]
+    }, 
+    {
+        "id": 2,
+        "page_id": "about",
+        "content": 
+        [
+            {
+                "id": 0,
+                "section": "hero",
+                "heading": "We’re Bridging Communties. One Ride at a time."
+            },
+            {
+                "id": 1,
+                "section": "whoweare",
+                "heading": "Who we ",
+                "heading_span": "Are",
+                "content_text" : "Work rides is a non-profit organization founded in Newberry South Carolina to address the needs of service workers who have limited and/or highly unreliable means to get to and from work. We’ve expanded our scope to include transportation to other destinations in the community, like libraries, post offices, medical offices, grocery stores and job interviews. Our mission is to provide support for those who go through tremendous obstacles just to cover their basic needs. Removing these obstacles reduces psychological stress and allows individuals to climb the economic ladder, leading to emotional fulfillment and economic empowerment."
+            },
+            {
+                "id": 2,
+                "section": "whoweserve",
+                "heading": "Who we ",
+                "heading_span": "Serve",
+                "content_text" : "We serve workers, who suffer economic uncertainty due to inconsistent, unreliable transportation. We serve communities by making sure those who live in them have access to opportunities that were previously unavailable due to transportation constraints. We serve businesses, who reap the economic benefits from employees who can now consistently and reliably show up for work on time.",
+                "communties_served" : "Workers, Communities, Employers"
+            }
+
+        ]
+    },
+    {
+        "id": 3,
+        "page_id": "contact",
+        "content":
+        [
+            {
+                "section": "contact_addresses",
+                "heading": "Contacts",
+                "contact_address" :
+                [
+                    {
+                        "title": "Work Rides",
+                        "address_1": "P.O. Box 454 \n",
+                        "address_2": "Newberry, SC 29108"
+                    }
+                ] ,
+                "contact_info":
+                [
+                    {
+                        "id": 0,
+                        "title": "General Inquiries",
+                        "link" : "mailto:inquiries@workrides.org",
+                        "email": "inquiries@workrides.org"
+
+                    },
+                    {
+                        "id": 1,
+                        "title": "Donation Inquiries",
+                        "mailto_link" : "mailto:donations@workrides.org",
+                        "email": "donations@workrides.org"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Businesses",
+                        "mailto_link" : "mailto:business@workrides.org",
+                        "email": "business@workrides.org"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Memberships",
+                        "mailto_link" : "mailto:memberships@workrides.org",
+                        "email": "members@workrides.org"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Riders",
+                        "mailto_link" : "mailto:riders@workrides.org",
+                        "email": "riders@workrides.org"
+                    },
+                    {
+                        "id": 5,
+                        "title": "Press",
+                        "mailto_link" : "mailto:memberships@workrides.org",
+                        "email": "press@workrides.org"
+                    }
+                ]
+            
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "page_id": "donate",
+        "content":
+        [
+            {
+                "id": 0,
+                "section": "hero",
+                "heading": "Thank You. Gracias. Merci. Grazie. Danke. Arigato. Xie Xie."
+            },
+            {
+                "id": 1,
+                "section": "donation",
+                "heading": "Your donation ",
+                "heading_span": "Matters",
+                "content_text" : "Your donation will help riders access safe, reliable transportation options necessary to escape the cycle of poverty.  Work Rides is a 501(c)(3) charitable organization. All donations are tax-deductible."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "page_id": "footer",
+        "content":
+        [
+            {   
+                "section": "navigation",
+                "footer_navigation":
+                [
+                   { 
+                        "id": 0,
+                        "name": "About",
+                        "link": "/about"
+                   },
+                   { 
+                        "id": 1,
+                        "name": "Press",
+                        "link": "#"
+                   },
+                   { 
+                        "id": 2,
+                        "name": "Contact",
+                        "link": "/contact"
+                   },
+                   { 
+                        "id": 3,
+                        "name": "Careers",
+                        "link": "#"
+                   },
+                   { 
+                        "id": 4,
+                        "name": "Terms",
+                        "link": "#"
+                   }
+                ]
+            },
+            {
+                "section": "svg_icons",
+                "social_svg_icons":
+                [
+                    {
+                        "id": 0,
+                        "name": "Facebook",
+                        "link": "https://facebook.com/workrides.org",
+                        "image_link": "/img/social-media.svg#icon-facebook",
+                        "svg_location": "#icon-facebook",
+                        "aria_label": "Join us on Facebook"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Twitter",
+                        "link": "https://twitter.com/workrides",
+                        "image_link": "/img/social-media.svg#icon-twitter",
+                        "svg_location": "#icon-twitter",
+                        "aria_label": "Join us on Twitter"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Instagram",
+                        "link": "https://www.instagram.com/workridesdotorg",
+                        "image_link": "/img/social-media.svg#icon-instagram",
+                        "svg_location": "#icon-instagram",
+                        "aria_label": "Join us on Instagram"
+                    }
+                ]
+            },
+            {
+                "section": "info",
+                "footer_info": [
+                    {
+                        "id": 0,
+                        "content": "Copyright © 2020 by Work Rides. All rights reserved."
+                    },
+                    {
+                        "id": 1,
+                        "content": "Site design and development by Todd Eagle."
+                    }
+                ]
+            }
+        ]
+    }
+]

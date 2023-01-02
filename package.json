@@ -1,0 +1,60 @@
+{
+  "name": "template",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "proxy": "http://localhost:3030",
+  "homepage": "http://localhost:3030",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dompurify": "^2.4.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "gsap": "npm:@gsap/simply@^3.10.4",
+    "lodash": "^4.17.21",
+    "massive": "^6.10.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "^2.1.3",
+    "resize-observer-polyfill": "^1.5.1",
+    "styled-components": "^5.3.3",
+    "styled-normalize": "^8.0.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "init-server": "nodemon server/index.js",
+    "dev": "concurrently \"npm run init-server\" \"npm run start\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
