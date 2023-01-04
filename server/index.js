@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, "..", "build")))
 
 app.listen( SERVER_PORT, () => console.log(`Connected to port ${SERVER_PORT}`))
 
-app.get('/api/content/:page_id', content.getContent)
+app.get('/api/content/:pageid', content.getContent)
 app.post('/api/mail', mail.sendMail)
 
 app.get('/*', function(req, res) {

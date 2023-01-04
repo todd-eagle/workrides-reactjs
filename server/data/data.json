@@ -1,7 +1,7 @@
 [
    {
     "id": 0,
-    "page_id": "landing",
+    "pageid": "landing",
     "content": 
         [
             {
@@ -134,7 +134,7 @@
     },
     {
         "id": 1,
-        "page_id": "services",
+        "pageid": "services",
         "content": 
         [
             {
@@ -185,7 +185,7 @@
     }, 
     {
         "id": 2,
-        "page_id": "about",
+        "pageid": "about",
         "content": 
         [
             {
@@ -213,7 +213,7 @@
     },
     {
         "id": 3,
-        "page_id": "contact",
+        "pageid": "contact",
         "content":
         [
             {
@@ -273,7 +273,7 @@
     },
     {
         "id": 4,
-        "page_id": "donate",
+        "pageid": "donate",
         "content":
         [
             {
@@ -292,7 +292,7 @@
     },
     {
         "id": 5,
-        "page_id": "footer",
+        "pageid": "footer",
         "content":
         [
             {   
