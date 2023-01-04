@@ -4,7 +4,6 @@
   "private": true,
   "main": "index.js",
   "proxy": "http://localhost:3030",
-  "homepage": "http://localhost:3030",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "@testing-library/jest-dom": "^5.16.2",
