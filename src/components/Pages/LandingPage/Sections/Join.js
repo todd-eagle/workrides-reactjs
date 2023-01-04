@@ -109,8 +109,7 @@ const Content = ({joinContent, windowWidth}) => {
             </SocialMediaContainer>
           </Fragment>
          
-        )
-            
+        )          
       })
 
       return (

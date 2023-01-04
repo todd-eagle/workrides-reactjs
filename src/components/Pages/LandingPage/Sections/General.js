@@ -74,7 +74,7 @@ const General = (props) => {
 
   const {sectionContent} = props
 
-return ( 
+  return ( 
     <GeneralSection>
         <Content generalContent={sectionContent} />
     </GeneralSection>
