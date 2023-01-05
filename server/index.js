@@ -16,9 +16,9 @@ app.use(express.static(path.join(__dirname, "..", "build")))
 app.listen( SERVER_PORT, () => console.log(`Connected to port ${SERVER_PORT}`))
 
 app.get('/api/content/:pageid', content.getContent)
-app.post('/api/mail', mail.sendMail)
+// app.post('/api/mail', mail.sendMail)
 
-app.get('/*', function(req, res) {
+app.get('*', function(req, res) {
   res.sendFile('index.html',{root: path.join(__dirname, "..", "build")}, function(err) {
     if (err) {
       console.log('Error: ', err)

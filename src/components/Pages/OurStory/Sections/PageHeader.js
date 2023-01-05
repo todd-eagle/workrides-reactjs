@@ -20,7 +20,6 @@ const Content = ({headingContent}) => {
         }
     }
 
-
    return (<>{heroHeading(headingContent)}</>)
 }
 

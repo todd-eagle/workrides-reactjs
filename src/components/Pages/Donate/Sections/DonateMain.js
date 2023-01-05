@@ -48,7 +48,6 @@ const Content = ({donateContent}) => {
 
             element.async=asyncBool
             document.head.appendChild(element)
-
         })
 
         return element
