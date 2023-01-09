@@ -9,7 +9,7 @@ function BaseForm({inputInfo, errors, Style=null, InputStyle=null, TextAreaStyle
         
         return (
         <Fragment key={el.id}>
-            {changeImage}
+            {/* {changeImage} */}
             {(!otherInputs) ?
                 <InputStyle 
                     key={el.id + index} 
