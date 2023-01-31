@@ -38,6 +38,7 @@ export const DonateSection = styled(Section)`
 `
 export const DonateHeading = styled(ServiceHeading)`
     font-size: calc(2.5rem + 1.2vw)
+    font-size: ${(props) => props.theme.windowWidth > "2630" ? "7.3rem" : "calc(2.5rem + 1.2vw)"};
 `
 export const DonateH2After = styled(H2After)`
 `

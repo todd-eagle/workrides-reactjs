@@ -29,7 +29,7 @@ export const AboutSection = styled(Section)`
 `
 export const AboutHeading = styled(ServiceHeading)`
     text-align: center;
-    font-size: calc(3.3rem + 1.2vw);
+    font-size: ${(props) => props.theme.windowWidth > "2630" ? "6.8rem" : "calc(3.3rem + 1.2vw)"};
     &:after {
         content: ""
         margin-top: 1.5rem;

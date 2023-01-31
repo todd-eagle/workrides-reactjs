@@ -8,7 +8,7 @@ const useContent = () => {
     const getPageContent = async(page) => {
         try {
             const  response = await contentRoute.get(`/api/content/${page}`)
-            setPageContent(response.content)
+            setPageContent(response.data.content)
         } catch (err) {
             console.log('Get content error: ', err)
         }

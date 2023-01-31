@@ -1,14 +1,17 @@
 import React, {Fragment} from 'react'
 import DOMPurify from 'dompurify'
+import useEvents from '../../../../hooks/useEvents'
 import {SpanPurple, SectionTextLead, H2After} from '../../../../styled-components/Base/Base'
 import { GeneralSection, GeneralSectionInfo,
     H2Landing, LargeOrangeText, LargePurpleText,
-    LargeGreenText, GeneralSectText
+    LargeGreenText, GeneralSectText, OdecoratedText,
+    PdecoratedText, GdecoratedText , PlaceHolder
     } from '../../../../styled-components/Pages/PageLanding'
 
-const Content = (props) => {
+const Content = ({generalContent}) => {
 
-  const {generalContent} = props
+  const {useCurrentWidth} = useEvents()
+  const windowWidth = useCurrentWidth()
 
   const topSection = () => {
     if(generalContent){
@@ -30,8 +33,16 @@ const Content = (props) => {
     if(generalContent !== undefined ){
       if (generalContent.general_info) {
         const spanText =[LargeOrangeText, LargePurpleText, LargeGreenText]
+        const textDecoration = [OdecoratedText, PdecoratedText, GdecoratedText]
         const mainContent = generalContent.general_info.map((el, index)=>{
+
           const ColorSpan = spanText[index]
+          const DecoratedText = textDecoration[index]
+          const statSpan =  windowWidth > 601 ? <ColorSpan>{el.percentage}</ColorSpan> : null
+          
+          const decoratedTextSpan = <DecoratedText>{el.percentage}&nbsp;</DecoratedText>
+          let statInfo  = windowWidth < 601 ? decoratedTextSpan : null
+
           const purpleText = "no"
           const greenText = "4 times"
           const orangeText = "total"
@@ -47,10 +58,12 @@ const Content = (props) => {
                                   el.info.search(orangeText) !== -1 ?
                                   el.info.replace(orangeText, `<span style=${orangeUnderline}>${orangeText}</span>`):
                                   el.info
+          
+          
           return (
             <Fragment key={el.percentage}>
-              <ColorSpan>{el.percentage}</ColorSpan>
-              <GeneralSectText dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(formattedText) }}/>
+              {statSpan}
+              <GeneralSectText>{statInfo}<PlaceHolder dangerouslySetInnerHTML={{ __html:DOMPurify.sanitize(formattedText) }}/></GeneralSectText>
             </Fragment>  
           )
 

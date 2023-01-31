@@ -145,7 +145,9 @@ export const GeneralSectionInfo = styled.div`
     grid-row: 4/5;
     grid-column: centercontent;
     display: grid;
-    grid-template-columns: min-content minmax(20rem, 68rem);
+    ${(props) => props.theme.windowWidth > '600' && `
+        grid-template-columns: min-content minmax(20rem, 68rem);
+    `}
     column-gap: 3rem;
     row-gap: 1rem;
     justify-content: center;
@@ -567,4 +569,19 @@ export const Options4Text = styled(TestimonialsText)`
         margin-top: 8.5vw;
         font-size: calc(.6rem + 1.6vw);
     `}
+`
+const DecoratedText = styled.span `
+        font-weight:600;
+        font-size: 2.2rem;
+`
+export const OdecoratedText = styled(DecoratedText)`
+    color: #e67e22;
+`
+export const PdecoratedText = styled(DecoratedText)`
+    color: #a968c0;
+`
+export const GdecoratedText = styled(DecoratedText)`
+    color: #6ab76d;
+`
+export const PlaceHolder = styled.span`
 `

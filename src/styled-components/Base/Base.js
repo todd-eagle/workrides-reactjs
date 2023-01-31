@@ -51,7 +51,7 @@ export const H2 = styled(CenteredText)`
     letter-spacing: 0.2rem;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: calc(2rem + 2vw);
+    font-size: ${(props) => props.theme.windowWidth > "2630" ? "7.3rem" : "calc(2rem + 2vw)"};         
 `
 export const H2After = styled(H2)`
     &:after {

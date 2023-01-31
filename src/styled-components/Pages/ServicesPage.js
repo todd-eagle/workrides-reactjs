@@ -134,7 +134,7 @@ export const TransitHeading = styled(H2)`
     grid-column: centercontent;
     text-align: center;
     line-height: 1.2;
-    font-size: calc(2.7rem + 1.1vw);
+    font-size: ${(props) => props.theme.windowWidth > "2630" ? "6.8rem" : "calc(2.7rem + 1.1vw)"};
 `
 export const TransitHeadText =  styled(ServicePageText)`
     font-size: calc(1.6rem + .48vw);

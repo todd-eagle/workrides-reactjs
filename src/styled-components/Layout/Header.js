@@ -15,11 +15,16 @@ export const HeadingContainer = styled.h1`
     text-align: center;
     letter-spacing: 0.1rem;
     font-size:  ${(props) => props.page === '/about' ? "calc(2.1rem + 2.5vw)" : "calc(2.3rem + 1.7vw)"};
+
+    ${(props) => props.theme.windowWidth > "2630" && props.page === '/donate' && `
+        font-size: 6.8rem;
+    `}
+
     word-spacing: 5px;
     display: block;
 
     ${(props) => props.page === '/donate'  && `
-        font-size: calc(2.3rem + 3vw);
+        font-size: ${(props) => props.theme.windowWidth > "2630" ? "9rem" : " calc(2.3rem + 3vw)"};
         font-weight: 400;
         grid-column: 2/10;
         grid-row: 3/7;
@@ -77,8 +82,12 @@ export const HeroHeadingMain =  styled.span`
 
 //Page Landing
 export const HeroHeadingSub = styled(HeroHeadingMain)`
-    // font-size: ${(props) => props.page === '/about' ? "calc(1rem + 1.2vw)" : props.page === '/services' ? "calc(2rem + 2.2vw)" : "calc(.7rem + .9vw)"};
     font-size: ${(props) => props.page === '/about' ? "calc(1rem + 1.2vw)" : props.page === '/services' ? "calc(2rem + 2.2vw)" : props.page === '/donate' ? "calc(2rem + .9vw)" :"calc(.7rem + .9vw)"};
+    
+    ${(props) => props.theme.windowWidth > "2630" && props.page === '/donate' && `
+        font-size: 4.5rem;
+    `}
+    
     margin-top: -0.5rem;
     word-spacing: 2px;
     display:  ${(props) => props.theme.windowWidth < 551 && props.page === undefined ? "none" : "block"};
