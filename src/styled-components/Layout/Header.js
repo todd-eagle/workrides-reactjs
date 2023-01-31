@@ -53,8 +53,7 @@ export const HeadingContainer = styled.h1`
 `
 
 //Page Landing
-export const HeroHeadingMain =  styled.span`
-   
+export const HeroHeadingMain =  styled.span` 
     
     ${(props) => props.page === '/donate'  && `
        
