@@ -6,6 +6,7 @@ const useMail = () => {
     const [mailMessage, setMailMessage] = useState(null)
 
     const sendMail = async(values) => {
+        console.log('values -----:-----: ', values)
             try {
                 const response = await mailRoute.post('/api/mail', values)
                 setMailMessage(response.data)

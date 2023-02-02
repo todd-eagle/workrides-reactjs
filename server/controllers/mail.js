@@ -14,7 +14,6 @@ module.exports = {
         const msgToUser = {
           to: `${email}`,
           from: `${fromEmail}`,
-
           templateId: templateID
         }
 
