@@ -25,8 +25,13 @@ const HeaderSection = () => {
         e.preventDefault()
        
         if (formValid) {
+            setButtonText('Sending...')
             await sendMail(values)
             setValues('')
+            setButtonText('Sent!!')
+            setTimeout(()=>{
+                setButtonText('Send')
+            }, '2000')
         }
        
     }
@@ -55,6 +60,7 @@ const HeaderSection = () => {
     },[formIsValidated, isReqInputsSatisfied] )
 
     return (
+        
     <HeaderForm>
     <Menu />
         <ContactHeading>Contact Us.</ContactHeading>
@@ -70,6 +76,7 @@ const HeaderSection = () => {
             <Button Style={Styles.buttonStyle} formValid={formValid} onClick={onSubmit}>Send</Button>
         </ContactForm>
     </HeaderForm>
+    </Modal>
     )
 }
 
