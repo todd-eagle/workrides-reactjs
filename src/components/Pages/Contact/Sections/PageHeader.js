@@ -13,6 +13,7 @@ const HeaderSection = () => {
     const [values, setValues] = useState({})
     const [formValid, setFormValid] = useState(false)
     const {sendMail, mailMessage} = useMail()
+    const [buttonText, setButtonText] = useState('Send')
 
     const Styles = {
         formStyle: Form,
@@ -73,10 +74,9 @@ const HeaderSection = () => {
             handleChange={handleChange}
            >
             <MailStatus>{mailMessage}</MailStatus>
-            <Button Style={Styles.buttonStyle} formValid={formValid} onClick={onSubmit}>Send</Button>
+            <Button Style={Styles.buttonStyle} formValid={formValid} onClick={onSubmit}>{buttonText}</Button>
         </ContactForm>
     </HeaderForm>
-    </Modal>
     )
 }
 
