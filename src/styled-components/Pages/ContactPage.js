@@ -35,40 +35,61 @@ export const MailStatus = styled.div`
 const checkmark = `
     background-image: url(${checkmarkImage});
     background-size: 4rem;
+    // background-size: ${(props) =>props.theme.windowWidth < "400" ? "3.5rem" : "4rem"};
     background-position-x: 98%;
     background-position-y: 0.35rem;
 `
 const cross = `
     background-image: url(${crossedImage}) !important;
-    &:-webkit-autofill{
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active
+    {
         background-image: url(${crossedImage}) !important;
     }
     background-size: 3.4rem;
     background-position-y: 0.7rem;
     background-position-x: 97.5%;
 `
+export const InputContainer = styled.div`
+    position:relative; 
+    padding:0;
+    margin:0;
+`
+export const InputDiv = styled.div`
+    ${props => !props.changeImage ? '' : props.changeImage === "cross" ? cross : checkmark}
+    position:absolute;
+    margin-left: ${(props) =>props.theme.windowWidth < "400" ? "82%" : props.theme.windowWidth < "500" ? "85%" : props.theme.windowWidth < "800" ? "88%" :  props.theme.windowWidth < "1130"? "90%" : props.theme.windowWidth < "1230" ? "92%" : "93%"};
+    padding-right: 2rem;
+    font-size: 2.4rem;
+    height: 4.7rem;
+    width: 4rem;
+    padding-left: 2rem;
+    background-repeat: no-repeat;
+    z-index: 1;
+`
 export const Input = styled.input`
-    ${props => !props.changeImage ? null : props.changeImage === "cross" ? cross : checkmark}
+    ${props => !props.changeImage ? '' : props.changeImage === "cross" ? cross : checkmark}
+    width: 100%;
     border: none;
     box-shadow: 0 1rem 2rem rgb(0 0 0 / 50%);
-    font-size: 2.4rem;
+    font-size: ${(props) =>props.theme.windowWidth < "400" ? "1.8rem" : "2.4rem"};
     height: 4.7rem;
     padding-left: 2rem;
     border-radius: 1.2rem;
     background-repeat: no-repeat;
     opacity: 0.8;
 
-   
-    
     ${(props) => props.theme.windowWidth < "431"  && `
         width: 100%;
     `}
 `
 export const TextArea = styled.textarea`
     ${props => !props.changeImage ? null : props.changeImage === "cross" ? cross : checkmark}
+    width: 100%;
     height: 20rem;
     font-family: inherit;
-    font-size: 2.5rem;
+    font-size: ${(props) =>props.theme.windowWidth < "400" ? "1.8rem" : "2.5rem"};
     box-shadow: 0 1rem 2rem rgb(0 0 0 / 50%);
     padding-left: 2rem;
     border-radius: 1.2rem;
@@ -85,6 +106,11 @@ export const FormButton = styled(BaseButton)`
     color: #ffffff;
     justify-self: center;
     background-color: #e67e22;
+`
+export const DimButton = styled(FormButton)`
+    background-color: #EFBF9C;
+    cursor: auto;
+
 `
 export const Contact2Heading = styled(ContactHeading)`
     font-size: 4rem;

@@ -14,7 +14,6 @@ const DROP_DOWN_SELECT = 'Please Select'
 
 
 const useValidation = (values, inputs) => {
-  
     const [errors, setErrors] = useState({})
     const [requiredFields, setRequiredFields] = useState({})
     let isReqInputsSatisfied = false
@@ -97,7 +96,7 @@ const useValidation = (values, inputs) => {
                 }
                 break;
             case 'alphaNumeric':
-                if(!/^[\s\w&.?!#$&()@]+$/.test(value)){
+                if(!/^[\s\w&.?!#$&()',@]+$/.test(value)){
                     errors[id] = "Only certain special characters are allowed."
                     valid[id] = false
                 }else {
